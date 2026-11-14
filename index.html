@@ -1,0 +1,626 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="結合學會學課程觀念與個人實踐經驗，從理解拖延到建立行動習慣。">
+  <title>從拖延到行動｜我的學習歷程與改善練習手冊</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Noto+Sans+TC:wght@400;500;600;700&amp;family=Noto+Serif+TC:wght@500;600;700&amp;display=swap" rel="stylesheet">
+  <style>
+    :root{--paper:#f7f5ef;--paper-dark:#eeece3;--white:#fffefa;--ink:#283b32;--muted:#778078;--green:#486b57;--green-light:#e5ede5;--orange:#c47d5b;--orange-light:#f4e8df;--line:#deded4;--yellow:#e8c98b;--serif:"Noto Serif TC",serif;--sans:"Noto Sans TC",sans-serif}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;width:100%;font-family:var(--sans);color:var(--ink);line-height:1.8}button,input,textarea{font:inherit}button{cursor:pointer}a{color:inherit;text-decoration:none}a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible{outline:3px solid var(--orange);outline-offset:3px}
+    .app-wrapper{width:100%;min-height:100%;background:var(--paper)}
+    .top-nav{position:sticky;top:0;z-index:20;display:flex;justify-content:space-between;align-items:center;gap:16px;padding:13px 7%;background:rgba(247,245,239,.96);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+    .brand{font-family:var(--serif);font-weight:700;letter-spacing:.08em;font-size:15px;white-space:nowrap}.nav-links{display:flex;gap:24px;flex-wrap:wrap;font-size:13px;color:var(--muted)}.nav-links a:hover{color:var(--green)}
+    .hero{max-width:1100px;margin:auto;padding:100px 7% 90px;display:grid;grid-template-columns:1.2fr .8fr;gap:45px;align-items:center}.eyebrow{color:var(--orange);letter-spacing:.2em;font-size:11px;font-weight:700}.hero h1{font-family:var(--serif);font-size:clamp(36px,5vw,59px);line-height:1.35;letter-spacing:.03em;margin:20px 0}.hero-copy{max-width:540px;color:var(--muted);font-size:15px}.hero-quote{margin-top:28px;padding-left:17px;border-left:3px solid var(--orange);color:var(--green);font-family:var(--serif);font-size:16px}
+    .hero-art{background:var(--green-light);min-height:340px;border-radius:48% 48% 12px 12px;display:flex;flex-direction:column;justify-content:center;align-items:center;position:relative;overflow:hidden}.sun{width:125px;height:125px;border-radius:50%;background:var(--yellow);position:absolute;top:48px;right:45px;opacity:.85}.plant{font-size:105px;z-index:1;margin-top:20px}.art-caption{z-index:1;color:var(--green);font-family:var(--serif);font-size:14px;letter-spacing:.12em}
+    .section{padding:85px 7%;scroll-margin-top:75px}.section-inner{max-width:1000px;margin:auto}.section-heading{margin-bottom:38px}.section-heading h2{font-family:var(--serif);font-size:clamp(25px,3vw,35px);margin:8px 0}.section-heading p{color:var(--muted);font-size:14px;margin:5px 0}
+    .story-grid,.concept-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}.story-card,.concept{background:var(--white);padding:27px;border:1px solid var(--line);border-radius:13px}.story-card h3{font-family:var(--serif);font-size:18px;margin:10px 0}.story-card p,.concept p{color:var(--muted);font-size:14px;margin:0}.number{font-family:"DM Sans",sans-serif;font-size:12px;color:var(--orange);letter-spacing:.15em}.course-section,.reflection-section{background:var(--paper-dark)}.concept-list{gap:15px}.concept{padding:23px}.concept h3{font-size:16px;margin:0 0 9px;color:var(--green)}.concept p{font-size:13px}.topic-tag{display:inline-block;font-size:10px;letter-spacing:.08em;color:var(--orange);background:var(--orange-light);padding:3px 9px;border-radius:20px;margin-bottom:10px}
+    .habit-loop{margin-top:28px;padding:25px;background:var(--green);color:white;border-radius:13px}.habit-loop h3{font-family:var(--serif);margin:0 0 17px}.loop-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;text-align:center}.loop-item{padding:15px 8px;background:rgba(255,255,255,.1);border-radius:9px}.loop-item strong{display:block;font-size:14px}.loop-item span{font-size:11px;opacity:.8}
+    .practice-section{background:var(--white)}.timeline{border-left:2px solid var(--line);margin-left:9px;padding-left:28px}.timeline-item{position:relative;padding:0 0 30px}.timeline-item:before{content:"";width:12px;height:12px;border-radius:50%;background:var(--orange);position:absolute;left:-35px;top:8px}.timeline-item h3{font-family:var(--serif);margin:0 0 6px;font-size:17px}.timeline-item p{margin:0;color:var(--muted);font-size:14px}.highlight{background:var(--orange-light);border-radius:12px;padding:22px 25px;margin-top:8px;color:#79513d;font-size:14px}
+    .workbook-section{background:var(--paper)}.workbook-intro{background:var(--green);color:white;border-radius:14px;padding:28px;margin-bottom:28px}.workbook-intro h3{font-family:var(--serif);margin:0 0 8px;font-size:21px}.workbook-intro p{margin:0;font-size:13px;opacity:.85}.tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:20px}.tab{border:1px solid var(--line);border-radius:30px;background:transparent;padding:9px 17px;font-size:13px;color:var(--muted)}.tab[aria-selected="true"]{background:var(--green);border-color:var(--green);color:white}.panel{background:var(--white);padding:28px;border:1px solid var(--line);border-radius:13px}.panel[hidden]{display:none}.panel h3{font-family:var(--serif);font-size:20px;margin:0 0 6px}.panel-desc{font-size:13px;color:var(--muted);margin:0 0 22px}.field{margin-bottom:17px}.field label{display:block;font-size:13px;font-weight:600;margin-bottom:6px}.field input,.field textarea{width:100%;border:1px solid var(--line);background:#fffefa;border-radius:8px;padding:11px 13px;color:var(--ink);font-size:13px}.field input:focus,.field textarea:focus{border-color:var(--green)}.field textarea{min-height:85px;resize:vertical}.btn{border:0;background:var(--green);color:#fff;border-radius:8px;padding:11px 20px;font-size:13px}.btn:hover{background:#355441}.btn:disabled{opacity:.55;cursor:wait}.btn-secondary{background:var(--orange-light);color:#79513d}.btn-secondary:hover{background:#ead7ca}.saved-list{margin-top:20px;display:grid;gap:10px}.saved-item{background:var(--paper);padding:14px 16px;border-radius:8px;display:flex;justify-content:space-between;gap:12px;align-items:center;font-size:13px}.saved-item strong{display:block;overflow-wrap:anywhere}.saved-item small{color:var(--muted);display:block;white-space:pre-wrap;overflow-wrap:anywhere}.saved-item button{border:0;background:var(--green-light);color:var(--green);padding:6px 10px;border-radius:6px;font-size:11px;flex-shrink:0}
+    .timer-card{background:var(--green-light);border-radius:12px;padding:25px;text-align:center;margin-bottom:20px}.timer-display{font-family:"DM Sans",sans-serif;font-size:58px;font-weight:600;letter-spacing:.04em;color:var(--green);margin:10px 0}.timer-note{color:var(--muted);font-size:12px}.timer-controls{display:flex;justify-content:center;gap:8px;flex-wrap:wrap}.checklist{display:grid;gap:10px;margin:18px 0}.check-row{display:flex;align-items:center;gap:10px;padding:11px 13px;background:var(--paper);border-radius:8px;font-size:13px;cursor:pointer}.check-row input{accent-color:var(--green)}.progress-track{height:8px;background:var(--paper-dark);border-radius:20px;overflow:hidden;margin:12px 0}.progress-fill{height:100%;width:0;background:var(--green);transition:width .3s}.progress-label{color:var(--muted);font-size:12px}
+    .reflection-box{max-width:750px;background:var(--white);padding:35px;border-radius:14px;margin:auto;text-align:center}.reflection-box h2{font-family:var(--serif);font-size:27px;margin:0 0 15px}.reflection-box p{color:var(--muted);font-size:14px}.reflection-quote{color:var(--green);font-family:var(--serif);font-size:19px;line-height:1.9;margin-top:25px}.site-footer{background:var(--ink);color:rgba(255,255,255,.75);text-align:center;padding:35px 7%;font-size:12px}.site-footer strong{display:block;color:#fff;font-family:var(--serif);font-size:17px;margin-bottom:6px}
+    .notice{margin:0 0 18px;padding:12px 16px;border-radius:8px;background:var(--green-light);color:var(--ink);font-size:13px}.notice.error{background:#f9e7df;color:#793e2e}.notice[hidden]{display:none}
+    @media(max-width:700px){.top-nav{padding:12px 5%;align-items:flex-start;flex-direction:column}.nav-links{gap:10px 15px;font-size:11px}.hero{grid-template-columns:1fr;padding:65px 7%}.hero-art{min-height:240px}.sun{width:90px;height:90px}.plant{font-size:80px}.section{padding:60px 6%}.story-grid,.concept-list{grid-template-columns:1fr}.loop-grid{grid-template-columns:repeat(2,1fr)}.panel{padding:20px}.reflection-box{padding:25px 20px}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition-duration:.01ms!important;animation-duration:.01ms!important}}
+  </style>
+  <script src="https://cdn.tailwindcss.com/3.4.17" type="text/javascript"></script>
+</head>
+<body class="app-wrapper" style="background: rgb(247, 245, 239);">
+  <nav class="top-nav" aria-label="主要導覽">
+    <a href="#top" class="brand" style="color: rgb(40, 59, 50); font-weight: 700; font-size: 14px;">SLOWLY · 學會學</a>
+    <div class="nav-links">
+      <a href="#story" style="color: rgb(119, 128, 120); font-size: 14px;">我的起點</a>
+      <a href="#course" style="color: rgb(119, 128, 120); font-size: 14px;">課程學習</a>
+      <a href="#practice" style="color: rgb(119, 128, 120); font-size: 14px;">實踐歷程</a>
+      <a href="#workbook" style="color: rgb(119, 128, 120); font-size: 14px;">練習手冊</a>
+    </div>
+  </nav>
+
+  <header class="hero" id="top">
+    <div>
+      <div class="eyebrow" style="color: rgb(196, 125, 91); font-weight: 700; font-size: 14px;">A JOURNEY FROM PROCRASTINATION TO ACTION</div>
+      <h1 style="color: rgb(40, 59, 50); font-weight: 700;">從拖延到行動，<br>慢慢建立自己的節奏。</h1>
+      <p class="hero-copy" style="color: rgb(119, 128, 120); font-size: 14px;">我曾經總覺得截止日期還很遠，於是把事情留到最後才開始。透過《學會學》課程，我開始理解拖延背後的原因，也嘗試用不同的方法，讓自己一步一步開始行動。</p>
+      <div class="hero-quote" style="color: rgb(72, 107, 87); font-size: 14px;">不需要一次做到完美，先完成今天的一小步就好。</div>
+    </div>
+    <div class="hero-art" aria-label="陽光下成長的幼苗插畫" style="background: rgb(229, 237, 229);">
+      <div class="sun" aria-hidden="true"></div>
+      <div class="plant" aria-hidden="true">🌱</div>
+      <div class="art-caption" style="color: rgb(72, 107, 87); font-size: 14px;">ONE SMALL STEP AT A TIME</div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section" id="story" aria-labelledby="story-heading">
+      <div class="section-inner">
+        <div class="section-heading">
+          <div class="eyebrow" style="color: rgb(196, 125, 91); font-size: 14px;">01 · MY STARTING POINT</div>
+          <h2 id="story-heading" style="color: rgb(40, 59, 50); font-weight: 700; font-size: 21px;">我為什麼想改善拖延？</h2>
+          <p style="color: rgb(119, 128, 120); font-size: 14px;">先認識自己原本的習慣，才有機會找到適合的改變方式。</p>
+        </div>
+        <div class="story-grid">
+          <article class="story-card" style="background: rgb(255, 254, 250);">
+            <div class="number" style="color: rgb(196, 125, 91); font-size: 14px;">01 / DEADLINE</div>
+            <h3 style="color: rgb(40, 59, 50); font-size: 16px;">覺得時間還很多</h3>
+            <p style="color: rgb(119, 128, 120); font-size: 14px;">當截止日期還很遠時，容易認為可以晚一點再做，沒有立即開始的動力。</p>
+          </article>
+          <article class="story-card" style="background: rgb(255, 254, 250);">
+            <div class="number" style="color: rgb(196, 125, 91); font-size: 14px;">02 / DISTRACTION</div>
+            <h3 style="color: rgb(40, 59, 50); font-size: 16px;">容易受到外在干擾</h3>
+            <p style="color: rgb(119, 128, 120); font-size: 14px;">手機、訊息或其他事情容易吸引注意力，原本想做的事情就被延後。</p>
+          </article>
+          <article class="story-card" style="background: rgb(255, 254, 250);">
+            <div class="number" style="color: rgb(196, 125, 91); font-size: 14px;">03 / NO STARTING POINT</div>
+            <h3 style="color: rgb(40, 59, 50); font-size: 16px;">不知道怎麼開始</h3>
+            <p style="color: rgb(119, 128, 120); font-size: 14px;">面對比較大的任務時，有時會因為不知道從哪裡下手，而一直沒有採取行動。</p>
+          </article>
+          <article class="story-card" style="background: rgb(255, 254, 250);">
+            <div class="number" style="color: rgb(196, 125, 91); font-size: 14px;">04 / LAST MINUTE</div>
+            <h3 style="color: rgb(40, 59, 50); font-size: 16px;">最後才開始趕工</h3>
+            <p style="color: rgb(119, 128, 120); font-size: 14px;">事情累積到接近期限才開始處理，容易讓自己變得匆忙，也比較難安排進度。</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section course-section" id="course" aria-labelledby="course-heading" style="background: rgb(238, 236, 227);">
+      <div class="section-inner">
+        <div class="section-heading">
+          <div class="eyebrow" style="color: rgb(196, 125, 91); font-size: 14px;">02 · WHAT I LEARNED</div>
+          <h2 id="course-heading" style="color: rgb(40, 59, 50); font-weight: 700; font-size: 21px;">從課程中，我學到了什麼？</h2>
+          <p style="color: rgb(119, 128, 120); font-size: 14px;">《學會學》讓我發現，改善拖延可以從理解習慣、安排任務和調整環境開始。</p>
+        </div>
+        <div class="concept-list">
+          <article class="concept" style="background: rgb(255, 254, 250);">
+            <span class="topic-tag" style="background: rgb(244, 232, 223); color: rgb(196, 125, 91); font-size: 14px;">習慣養成</span>
+            <h3 style="color: rgb(72, 107, 87); font-size: 16px;">01. 習慣迴路</h3>
+            <p style="color: rgb(119, 128, 120); font-size: 14px;">習慣可以分成信號、慣例、獎勵和信念。找出自己容易分心的情境，再慢慢替換原本的行為。</p>
+          </article>
+          <article class="concept" style="background: rgb(255, 254, 250);">
+            <span class="topic-tag" style="background: rgb(244, 232, 223); color: rgb(196, 125, 91); font-size: 14px;">時間管理</span>
+            <h3 style="color: rgb(72, 107, 87); font-size: 16px;">02. 番茄工作法</h3>
+            <p style="color: rgb(119, 128, 120); font-size: 14px;">將專注時間切成一段一段，例如專心工作 25 分鐘，再安排短暫休息，降低開始任務的心理負擔。</p>
+          </article>
+          <article class="concept" style="background: rgb(255, 254, 250);">
+            <span class="topic-tag" style="background: rgb(244, 232, 223); color: rgb(196, 125, 91); font-size: 14px;">記憶與學習</span>
+            <h3 style="color: rgb(72, 107, 87); font-size: 16px;">03. 組塊與分散練習</h3>
+            <p style="color: rgb(119, 128, 120); font-size: 14px;">將大量內容拆成較小的部分，分次完成與複習，比起一次塞進大量資訊，更容易安排學習進度。</p>
+          </article>
+          <article class="concept" style="background: rgb(255, 254, 250);">
+            <span class="topic-tag" style="background: rgb(244, 232, 223); color: rgb(196, 125, 91); font-size: 14px;">專注力</span>
+            <h3 style="color: rgb(72, 107, 87); font-size: 16px;">04. 降低干擾</h3>
+            <p style="color: rgb(119, 128, 120); font-size: 14px;">留意讓自己分心的環境和情境，例如手機通知，並提前調整環境，讓自己更容易進入專注狀態。</p>
+          </article>
+          <article class="concept" style="background: rgb(255, 254, 250);">
+            <span class="topic-tag" style="background: rgb(244, 232, 223); color: rgb(196, 125, 91); font-size: 14px;">學習策略</span>
+            <h3 style="color: rgb(72, 107, 87); font-size: 16px;">05. 過程導向</h3>
+            <p style="color: rgb(119, 128, 120); font-size: 14px;">把注意力放在當下可以完成的行動，而不是一直擔心最後的結果。先開始，才能逐漸累積進度。</p>
+          </article>
+          <article class="concept" style="background: rgb(255, 254, 250);">
+            <span class="topic-tag" style="background: rgb(244, 232, 223); color: rgb(196, 125, 91); font-size: 14px;">身心調整</span>
+            <h3 style="color: rgb(72, 107, 87); font-size: 16px;">06. 睡眠與休息</h3>
+            <p style="color: rgb(119, 128, 120); font-size: 14px;">睡眠有助於記憶鞏固，也能支持思考與問題解決。適當休息是學習過程的一部分。</p>
+          </article>
+        </div>
+        <div class="habit-loop" style="background: rgb(72, 107, 87);">
+          <h3 style="color: rgb(255, 255, 255); font-size: 16px;">我學到的習慣迴路</h3>
+          <div class="loop-grid">
+            <div class="loop-item"><strong style="color: rgb(255, 255, 255); font-size: 14px;">信號 Cue</strong><span style="color: rgb(255, 255, 255); font-size: 14px;">發現該做的事情</span></div>
+            <div class="loop-item"><strong style="color: rgb(255, 255, 255); font-size: 14px;">慣例 Routine</strong><span style="color: rgb(255, 255, 255); font-size: 14px;">開始執行小任務</span></div>
+            <div class="loop-item"><strong style="color: rgb(255, 255, 255); font-size: 14px;">獎勵 Reward</strong><span style="color: rgb(255, 255, 255); font-size: 14px;">完成後適度休息</span></div>
+            <div class="loop-item"><strong style="color: rgb(255, 255, 255); font-size: 14px;">信念 Belief</strong><span style="color: rgb(255, 255, 255); font-size: 14px;">相信自己能持續做到</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section practice-section" id="practice" aria-labelledby="practice-heading" style="background: rgb(255, 254, 250);">
+      <div class="section-inner">
+        <div class="section-heading">
+          <div class="eyebrow" style="color: rgb(196, 125, 91); font-size: 14px;">03 · MY PRACTICE</div>
+          <h2 id="practice-heading" style="color: rgb(40, 59, 50); font-weight: 700; font-size: 21px;">我如何把學習運用在生活中？</h2>
+          <p style="color: rgb(119, 128, 120); font-size: 14px;">將課程中的方法實際運用，慢慢調整原本的拖延習慣。</p>
+        </div>
+        <div class="timeline">
+          <div class="timeline-item">
+            <h3 style="font-size: 16px;">提前一天安排隔天的事情</h3>
+            <p style="color: rgb(119, 128, 120); font-size: 14px;">我開始在前一天列出隔天要完成的工作，讓自己知道每天應該先做什麼，不必等到當天才臨時思考。</p>
+          </div>
+          <div class="timeline-item">
+            <h3 style="font-size: 16px;">把大任務拆成小步驟</h3>
+            <p style="color: rgb(119, 128, 120); font-size: 14px;">面對比較大的作業時，先分配每天要完成的進度，例如今天做到哪裡、明天接著完成什麼。</p>
+          </div>
+          <div class="timeline-item">
+            <h3 style="font-size: 16px;">使用番茄工作法</h3>
+            <p style="color: rgb(119, 128, 120); font-size: 14px;">設定一段專注時間，讓自己先投入眼前的任務，再透過休息調整狀態。</p>
+          </div>
+          <div class="timeline-item">
+            <h3 style="font-size: 16px;">減少手機與外在干擾</h3>
+            <p style="color: rgb(119, 128, 120); font-size: 14px;">盡量降低手機訊息和其他事情對注意力的影響，讓自己可以把心思放在正在進行的工作上。</p>
+          </div>
+          <div class="timeline-item">
+            <h3 style="font-size: 16px;">完成後給自己休息或獎勵</h3>
+            <p style="color: rgb(119, 128, 120); font-size: 14px;">每完成一個階段，就讓自己適度休息，讓完成任務也能帶來正向的感受。</p>
+          </div>
+        </div>
+        <div class="highlight" style="background: rgb(244, 232, 223);">
+          <strong style="color: rgb(121, 81, 61); font-weight: 700; font-size: 14px;">我的實際心得：</strong><br>
+          <span style="color: rgb(121, 81, 61); font-size: 14px;">剛開始使用這些方法時，還沒有養成習慣，偶爾會忘記記錄進度。但透過每天重複安排隔天的工作、完成後打勾，我逐漸建立起每天完成自己預定進度的習慣。</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section workbook-section" id="workbook" aria-labelledby="workbook-heading">
+      <div class="section-inner">
+        <div class="section-heading">
+          <div class="eyebrow" style="color: rgb(196, 125, 91); font-size: 14px;">04 · MY PRACTICE WORKBOOK</div>
+          <h2 id="workbook-heading" style="color: rgb(40, 59, 50); font-weight: 700; font-size: 21px;">拖延改善練習手冊</h2>
+          <p style="color: rgb(119, 128, 120); font-size: 14px;">把想法變成行動，從今天的一件小事開始。</p>
+        </div>
+        <div class="workbook-intro" style="background: rgb(72, 107, 87);">
+          <h3 style="color: rgb(255, 255, 255); font-size: 16px;">給正在拖延的你</h3>
+          <p style="color: rgb(255, 255, 255); font-size: 14px;">不必一次完成所有事情。先設定目標、拆解任務、安排時間，再記錄自己的改變。</p>
+        </div>
+        <div id="data-notice" class="notice" role="status" aria-live="polite" hidden></div>
+
+        <div class="tabs" role="tablist" aria-label="練習手冊分頁">
+          <button id="tab-goal" class="tab" type="button" role="tab" aria-controls="panel-goal" aria-selected="true" tabindex="0" data-tab="goal" style="font-size: 14px;">① 設定目標</button>
+          <button id="tab-task" class="tab" type="button" role="tab" aria-controls="panel-task" aria-selected="false" tabindex="-1" data-tab="task" style="font-size: 14px;">② 拆解任務</button>
+          <button id="tab-plan" class="tab" type="button" role="tab" aria-controls="panel-plan" aria-selected="false" tabindex="-1" data-tab="plan" style="font-size: 14px;">③ 每日計畫</button>
+          <button id="tab-timer" class="tab" type="button" role="tab" aria-controls="panel-timer" aria-selected="false" tabindex="-1" data-tab="timer" style="font-size: 14px;">④ 專注練習</button>
+          <button id="tab-habit" class="tab" type="button" role="tab" aria-controls="panel-habit" aria-selected="false" tabindex="-1" data-tab="habit" style="font-size: 14px;">⑤ 習慣追蹤</button>
+          <button id="tab-reflect" class="tab" type="button" role="tab" aria-controls="panel-reflect" aria-selected="false" tabindex="-1" data-tab="reflect" style="font-size: 14px;">⑥ 今日反思</button>
+        </div>
+
+        <!-- Panel 1: Goal -->
+        <section id="panel-goal" class="panel" role="tabpanel" aria-labelledby="tab-goal">
+          <h3 style="font-size: 16px;">設定一個想完成的目標</h3>
+          <p class="panel-desc" style="color: rgb(119, 128, 120); font-size: 14px;">先想清楚自己想完成什麼，以及這件事對自己的意義。</p>
+          <form id="goal-form" data-kind="goal">
+            <div class="field">
+              <label for="goal-title" style="font-size: 14px;">我的目標</label>
+              <input id="goal-title" required maxlength="100" placeholder="例如：完成期末報告" style="font-size: 14px;">
+            </div>
+            <div class="field">
+              <label for="goal-reason" style="font-size: 14px;">為什麼想完成這個目標？</label>
+              <textarea id="goal-reason" maxlength="500" placeholder="寫下自己的原因與期待" style="font-size: 14px;"></textarea>
+            </div>
+            <div class="field">
+              <label for="goal-date" style="font-size: 14px;">預計完成日期</label>
+              <input id="goal-date" type="date">
+            </div>
+            <button type="submit" class="btn" style="background: rgb(72, 107, 87); color: rgb(255, 255, 255); font-size: 14px;">儲存目標</button>
+          </form>
+          <div id="goal-list" class="saved-list" aria-live="polite"></div>
+        </section>
+
+        <!-- Panel 2: Task -->
+        <section id="panel-task" class="panel" role="tabpanel" aria-labelledby="tab-task" hidden>
+          <h3 style="font-size: 16px;">把大任務拆成小步驟</h3>
+          <p class="panel-desc" style="color: rgb(119, 128, 120); font-size: 14px;">將一件看起來很困難的事情，拆成現在就能開始的小行動。</p>
+          <form id="task-form" data-kind="task">
+            <div class="field">
+              <label for="task-title" style="font-size: 14px;">我要完成的任務</label>
+              <input id="task-title" required maxlength="100" placeholder="例如：準備研究計畫" style="font-size: 14px;">
+            </div>
+            <div class="field">
+              <label for="task-step" style="font-size: 14px;">下一個最小步驟</label>
+              <textarea id="task-step" required maxlength="500" placeholder="例如：先整理三篇相關文獻" style="font-size: 14px;"></textarea>
+            </div>
+            <div class="field">
+              <label for="task-easy" style="font-size: 14px;">如何讓自己更容易開始？</label>
+              <input id="task-easy" maxlength="200" placeholder="例如：先專心做 10 分鐘" style="font-size: 14px;">
+            </div>
+            <button type="submit" class="btn" style="background: rgb(72, 107, 87); color: rgb(255, 255, 255); font-size: 14px;">新增任務</button>
+          </form>
+          <div id="task-list" class="saved-list" aria-live="polite"></div>
+        </section>
+
+        <!-- Panel 3: Plan -->
+        <section id="panel-plan" class="panel" role="tabpanel" aria-labelledby="tab-plan" hidden>
+          <h3 style="font-size: 16px;">安排今天的進度</h3>
+          <p class="panel-desc" style="color: rgb(119, 128, 120); font-size: 14px;">提前安排任務，讓每天都有明確的小目標。</p>
+          <form id="plan-form" data-kind="plan">
+            <div class="field">
+              <label for="plan-date" style="font-size: 14px;">日期</label>
+              <input id="plan-date" type="date" required>
+            </div>
+            <div class="field">
+              <label for="plan-title" style="font-size: 14px;">今天要完成的事情</label>
+              <input id="plan-title" required maxlength="100" placeholder="例如：完成報告第一部分" style="font-size: 14px;">
+            </div>
+            <div class="field">
+              <label for="plan-time" style="font-size: 14px;">預計安排時間</label>
+              <input id="plan-time" maxlength="100" placeholder="例如：晚上 7 點到 8 點" style="font-size: 14px;">
+            </div>
+            <div class="field">
+              <label for="plan-backup" style="font-size: 14px;">如果沒有照計畫進行，我可以怎麼調整？</label>
+              <textarea id="plan-backup" maxlength="500" placeholder="例如：先完成最重要的部分，其他進度再重新安排" style="font-size: 14px;"></textarea>
+            </div>
+            <button type="submit" class="btn" style="background: rgb(72, 107, 87); color: rgb(255, 255, 255); font-size: 14px;">加入今日計畫</button>
+          </form>
+          <div id="plan-list" class="saved-list" aria-live="polite"></div>
+        </section>
+
+        <!-- Panel 4: Timer -->
+        <section id="panel-timer" class="panel" role="tabpanel" aria-labelledby="tab-timer" hidden>
+          <h3 style="font-size: 16px;">番茄鐘專注練習</h3>
+          <p class="panel-desc" style="color: rgb(119, 128, 120); font-size: 14px;">先選擇一件要完成的事情，設定專注時間，開始行動。</p>
+          <div class="timer-card" style="background: rgb(229, 237, 229);">
+            <div id="timer-status" class="timer-note" role="status" aria-live="polite">準備好開始了嗎？</div>
+            <div id="timer-display" class="timer-display" role="timer" aria-label="剩餘時間">25:00</div>
+            <div class="timer-controls">
+              <button id="timer-start" class="btn" type="button" style="background: rgb(72, 107, 87); color: rgb(255, 255, 255); font-size: 14px;">開始</button>
+              <button id="timer-pause" class="btn btn-secondary" type="button" style="background: rgb(244, 232, 223); color: rgb(121, 81, 61); font-size: 14px;">暫停</button>
+              <button id="timer-reset" class="btn btn-secondary" type="button" style="background: rgb(244, 232, 223); color: rgb(121, 81, 61); font-size: 14px;">重新計時</button>
+            </div>
+            <p class="timer-note" style="color: rgb(119, 128, 120); font-size: 14px; margin-top: 12px;">建議：專注 25 分鐘，完成後休息 5 分鐘。</p>
+          </div>
+          <div class="field">
+            <label for="timer-task" style="font-size: 14px;">這次想專心完成什麼？</label>
+            <input id="timer-task" maxlength="100" placeholder="例如：閱讀課程內容" style="font-size: 14px;">
+          </div>
+        </section>
+
+        <!-- Panel 5: Habit -->
+        <section id="panel-habit" class="panel" role="tabpanel" aria-labelledby="tab-habit" hidden>
+          <h3 style="font-size: 16px;">建立自己的每日習慣</h3>
+          <p class="panel-desc" style="color: rgb(119, 128, 120); font-size: 14px;">選擇一個想持續進行的小習慣，每完成一次就打勾。</p>
+          <div class="field">
+            <label for="habit-name" style="font-size: 14px;">我想培養的習慣</label>
+            <input id="habit-name" maxlength="100" placeholder="例如：每天提前安排明天的進度" style="font-size: 14px;">
+          </div>
+          <div class="field">
+            <label for="habit-small" style="font-size: 14px;">最簡單的開始方式</label>
+            <input id="habit-small" maxlength="200" placeholder="例如：先花 3 分鐘列出明天的任務" style="font-size: 14px;">
+          </div>
+          <div class="checklist">
+            <label class="check-row"><input class="habit-check" type="checkbox"><span style="font-size: 14px;">今天有安排自己的待辦事項</span></label>
+            <label class="check-row"><input class="habit-check" type="checkbox"><span style="font-size: 14px;">今天有完成預定的小進度</span></label>
+            <label class="check-row"><input class="habit-check" type="checkbox"><span style="font-size: 14px;">今天有減少不必要的干擾</span></label>
+            <label class="check-row"><input class="habit-check" type="checkbox"><span style="font-size: 14px;">今天有適度休息</span></label>
+          </div>
+          <div id="habit-progress-label" class="progress-label" role="status" aria-live="polite">完成 0 / 4 項</div>
+          <div class="progress-track" role="progressbar" aria-label="今日習慣進度" aria-valuemin="0" aria-valuemax="4" aria-valuenow="0">
+            <div id="habit-progress" class="progress-fill"></div>
+          </div>
+          <button id="save-habit" class="btn" type="button" style="background: rgb(72, 107, 87); color: rgb(255, 255, 255); font-size: 14px;">儲存今日紀錄</button>
+          <div id="habit-list" class="saved-list" aria-live="polite"></div>
+        </section>
+
+        <!-- Panel 6: Reflect -->
+        <section id="panel-reflect" class="panel" role="tabpanel" aria-labelledby="tab-reflect" hidden>
+          <h3 style="font-size: 16px;">回顧今天的自己</h3>
+          <p class="panel-desc" style="color: rgb(119, 128, 120); font-size: 14px;">透過簡單的反思，了解今天做得好的地方，以及明天可以調整的地方。</p>
+          <form id="reflect-form" data-kind="reflect">
+            <div class="field">
+              <label for="reflect-date" style="font-size: 14px;">日期</label>
+              <input id="reflect-date" type="date" required>
+            </div>
+            <div class="field">
+              <label for="reflect-good" style="font-size: 14px;">今天完成了什麼？</label>
+              <textarea id="reflect-good" maxlength="500" placeholder="記錄今天完成的一件事" style="font-size: 14px;"></textarea>
+            </div>
+            <div class="field">
+              <label for="reflect-hard" style="font-size: 14px;">今天遇到什麼困難？</label>
+              <textarea id="reflect-hard" maxlength="500" placeholder="例如：容易分心、時間安排不夠" style="font-size: 14px;"></textarea>
+            </div>
+            <div class="field">
+              <label for="reflect-next" style="font-size: 14px;">明天想做什麼調整？</label>
+              <textarea id="reflect-next" maxlength="500" placeholder="寫下一個明天可以實際做到的小改變" style="font-size: 14px;"></textarea>
+            </div>
+            <button type="submit" class="btn" style="background: rgb(72, 107, 87); color: rgb(255, 255, 255); font-size: 14px;">儲存今日反思</button>
+          </form>
+          <div id="reflect-list" class="saved-list" aria-live="polite"></div>
+        </section>
+      </div>
+    </section>
+
+    <section class="section reflection-section" aria-labelledby="closing-heading" style="background: rgb(238, 236, 227);">
+      <div class="section-inner">
+        <div class="reflection-box" style="background: rgb(255, 254, 250);">
+          <div class="eyebrow" style="color: rgb(196, 125, 91); font-size: 14px;">05 · MY REFLECTION</div>
+          <h2 id="closing-heading" style="font-size: 21px;">改變，是從一次次的小行動開始。</h2>
+          <p style="color: rgb(119, 128, 120); font-size: 14px;">這次課程讓我重新認識自己的拖延習慣，也讓我知道改善拖延不只是要求自己更有毅力，還可以透過安排進度、拆解任務、減少干擾和適當休息，讓行動變得更容易。</p>
+          <p style="color: rgb(119, 128, 120); font-size: 14px;">實際嘗試之後，我發現剛開始不一定能完全按照計畫進行，也可能會忘記記錄，但只要持續練習，就有機會慢慢建立新的習慣。</p>
+          <p style="color: rgb(119, 128, 120); font-size: 14px;">未來面對課業、考試或其他生活中的任務時，我希望能繼續運用這些方法，不再總是等到最後一刻才開始。</p>
+          <div class="reflection-quote" style="color: rgb(72, 107, 87);">
+            「先開始，再慢慢調整；<br>每一個小進度，都算是往前走了一步。」
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" style="background: rgb(40, 59, 50);">
+    <strong style="color: rgb(255, 255, 255); font-size: 14px;">從拖延到行動</strong>
+    <span style="color: rgb(255, 255, 255); font-size: 14px;">我的《學會學》課程學習歷程與改善練習手冊</span>
+    <p style="color: rgb(255, 255, 255); font-size: 14px; margin-top: 8px;">LEARNING IS A JOURNEY, NOT A RACE.</p>
+  </footer>
+
+  <template id="record-template">
+    <article class="saved-item">
+      <div>
+        <strong class="saved-title"></strong>
+        <small class="saved-detail"></small>
+      </div>
+      <button type="button">刪除</button>
+    </article>
+  </template>
+
+  <script>
+    const $ = id => document.getElementById(id);
+    const STORAGE_KEY = "procrastination_workbook_records_v1";
+    const types = ["goal", "task", "plan", "habit", "reflect"];
+    let records = [];
+    const rowMaps = Object.fromEntries(types.map(type => [type, new Map()]));
+    const value = id => $(id).value.trim();
+    const todayString = () => new Intl.DateTimeFormat("en-CA", { timeZone: "Asia/Taipei", year: "numeric", month: "2-digit", day: "2-digit" }).format(new Date());
+
+    function notice(text, error = false) {
+      const el = $("data-notice");
+      el.textContent = text;
+      el.classList.toggle("error", error);
+      el.hidden = false;
+      clearTimeout(el._hideTimer);
+      el._hideTimer = setTimeout(() => { el.hidden = true; }, 3500);
+    }
+
+    function loadStorage() {
+      try {
+        const raw = localStorage.getItem(STORAGE_KEY);
+        records = raw ? JSON.parse(raw) : [];
+      } catch (e) {
+        records = [];
+      }
+      renderRecords();
+      restoreTodayHabit();
+    }
+
+    function saveStorage() {
+      try {
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(records));
+      } catch (e) {
+        notice("儲存失敗，瀏覽器儲存空間可能已滿。", true);
+      }
+    }
+
+    function base(type, title, description, date = "") {
+      return {
+        id: "rec_" + Date.now() + "_" + Math.random().toString(36).slice(2, 7),
+        type,
+        title,
+        description,
+        target_date: date,
+        reflection: "",
+        created_at: new Date().toISOString()
+      };
+    }
+
+    function unpack(record) {
+      try {
+        const parsed = JSON.parse(record.description || "{}");
+        return parsed && typeof parsed === "object" && !Array.isArray(parsed) ? parsed : { legacy: record.description || "" };
+      } catch {
+        return { legacy: record.description || "" };
+      }
+    }
+
+    function detailFor(record) {
+      const data = unpack(record);
+      switch (record.type) {
+        case "goal":
+          return [data.reason || data.legacy, record.target_date && "預計完成：" + record.target_date].filter(Boolean).join("\n");
+        case "task":
+          return [data.step || data.legacy, data.easy && "更容易開始：" + data.easy].filter(Boolean).join("\n");
+        case "plan":
+          return [record.target_date, data.time && "安排時間：" + data.time, data.backup && "調整方式：" + data.backup, data.legacy].filter(Boolean).join("\n");
+        case "habit":
+          return [record.target_date, "完成 " + (Number(data.completed) || 0) + " / 4 項", data.small && "最簡單的開始方式：" + data.small].filter(Boolean).join("\n");
+        case "reflect":
+          return [record.target_date, data.good && "完成：" + data.good, data.hard && "困難：" + data.hard, data.next && "明天調整：" + data.next, data.legacy || record.reflection].filter(Boolean).join("\n");
+        default:
+          return "";
+      }
+    }
+
+    function renderRecords() {
+      for (const type of types) {
+        const list = $(type + "-list");
+        const map = rowMaps[type];
+        const items = records.filter(record => record.type === type && record.id)
+          .sort((a, b) => (b.created_at || "").localeCompare(a.created_at || ""));
+        const ids = new Set(items.map(item => item.id));
+        for (const [id, row] of map) {
+          if (!ids.has(id)) {
+            row.remove();
+            map.delete(id);
+          }
+        }
+        for (const record of items) {
+          const id = record.id;
+          let row = map.get(id);
+          if (!row) {
+            row = $("record-template").content.firstElementChild.cloneNode(true);
+            row.dataset.recordId = id;
+            row.querySelector("button").addEventListener("click", deleteRecord);
+            map.set(id, row);
+          }
+          const title = row.querySelector(".saved-title");
+          const detail = row.querySelector(".saved-detail");
+          const nextTitle = record.title || record.target_date || "紀錄";
+          const nextDetail = detailFor(record);
+          if (title.textContent !== nextTitle) title.textContent = nextTitle;
+          if (detail.textContent !== nextDetail) detail.textContent = nextDetail;
+          list.appendChild(row);
+        }
+      }
+    }
+
+    function restoreTodayHabit() {
+      const record = records.filter(item => item.type === "habit" && item.target_date === todayString())
+        .sort((a, b) => (b.created_at || "").localeCompare(a.created_at || ""))[0];
+      if (!record) return;
+      const data = unpack(record);
+      $("habit-name").value = record.title || "";
+      $("habit-small").value = data.small || "";
+      document.querySelectorAll(".habit-check").forEach((check, index) => {
+        check.checked = Array.isArray(data.checks) ? !!data.checks[index] : false;
+      });
+      updateHabitProgress();
+    }
+
+    function createRecord(record, onSuccess) {
+      records.push(record);
+      saveStorage();
+      renderRecords();
+      onSuccess();
+      notice("紀錄已儲存在此瀏覽器中。");
+    }
+
+    function deleteRecord(event) {
+      const row = event.currentTarget.closest("[data-record-id]");
+      const id = row?.dataset.recordId;
+      records = records.filter(item => item.id !== id);
+      saveStorage();
+      renderRecords();
+      notice("紀錄已刪除。");
+    }
+
+    // 分頁切換與鍵盤無障礙支援
+    document.querySelectorAll(".tabs .tab").forEach(button => {
+      button.addEventListener("click", () => {
+        document.querySelectorAll(".tabs .tab").forEach(tab => {
+          const selected = tab === button;
+          tab.setAttribute("aria-selected", String(selected));
+          tab.tabIndex = selected ? 0 : -1;
+          $(tab.getAttribute("aria-controls")).hidden = !selected;
+        });
+      });
+      button.addEventListener("keydown", event => {
+        if (!["ArrowLeft", "ArrowRight", "Home", "End"].includes(event.key)) return;
+        event.preventDefault();
+        const tabs = [...document.querySelectorAll(".tabs .tab")];
+        const index = tabs.indexOf(button);
+        const next = event.key === "Home" ? 0 : event.key === "End" ? tabs.length - 1 : (index + (event.key === "ArrowRight" ? 1 : -1) + tabs.length) % tabs.length;
+        tabs[next].click();
+        tabs[next].focus();
+      });
+    });
+
+    // 表單送出處理
+    const formBuilders = {
+      goal: () => base("goal", value("goal-title"), JSON.stringify({ reason: value("goal-reason") }), $("goal-date").value),
+      task: () => base("task", value("task-title"), JSON.stringify({ step: value("task-step"), easy: value("task-easy") })),
+      plan: () => base("plan", value("plan-title"), JSON.stringify({ time: value("plan-time"), backup: value("plan-backup") }), $("plan-date").value),
+      reflect: () => {
+        const record = base("reflect", $("reflect-date").value, JSON.stringify({ good: value("reflect-good"), hard: value("reflect-hard"), next: value("reflect-next") }), $("reflect-date").value);
+        record.reflection = value("reflect-good");
+        return record;
+      }
+    };
+
+    document.querySelectorAll("form[data-kind]").forEach(form => {
+      form.addEventListener("submit", event => {
+        event.preventDefault();
+        const record = formBuilders[form.dataset.kind]();
+        if (!record.title) return notice("請填寫必填欄位。", true);
+        createRecord(record, () => {
+          form.reset();
+          if (form.dataset.kind === "plan") $("plan-date").value = todayString();
+          if (form.dataset.kind === "reflect") $("reflect-date").value = todayString();
+        });
+      });
+    });
+
+    // 番茄鐘計時器
+    let remaining = 25 * 60, timerInterval = null, deadline = 0;
+    function renderTimer() {
+      $("timer-display").textContent = String(Math.floor(remaining / 60)).padStart(2, "0") + ":" + String(remaining % 60).padStart(2, "0");
+    }
+    function stopTimer() {
+      clearInterval(timerInterval);
+      timerInterval = null;
+    }
+    function tick() {
+      remaining = Math.max(0, Math.ceil((deadline - Date.now()) / 1000));
+      renderTimer();
+      if (!remaining) {
+        stopTimer();
+        $("timer-status").textContent = "完成一輪專注！記得讓自己休息一下。";
+      }
+    }
+    $("timer-start").addEventListener("click", () => {
+      if (timerInterval) return;
+      if (remaining === 0) remaining = 25 * 60;
+      deadline = Date.now() + remaining * 1000;
+      $("timer-status").textContent = "專注進行中，先把注意力放在眼前的任務。";
+      renderTimer();
+      timerInterval = setInterval(tick, 250);
+    });
+    $("timer-pause").addEventListener("click", () => {
+      if (timerInterval) {
+        tick();
+        stopTimer();
+      }
+      $("timer-status").textContent = "已暫停，可以稍後繼續。";
+    });
+    $("timer-reset").addEventListener("click", () => {
+      stopTimer();
+      remaining = 25 * 60;
+      renderTimer();
+      $("timer-status").textContent = "準備好開始了嗎？";
+    });
+
+    // 習慣追蹤進度條與儲存
+    function updateHabitProgress() {
+      const checks = [...document.querySelectorAll(".habit-check")];
+      const count = checks.filter(check => check.checked).length;
+      $("habit-progress-label").textContent = `完成 ${count} / ${checks.length} 項`;
+      $("habit-progress").style.width = (count / checks.length * 100) + "%";
+      document.querySelector(".progress-track").setAttribute("aria-valuenow", String(count));
+    }
+    document.querySelectorAll(".habit-check").forEach(check => check.addEventListener("change", updateHabitProgress));
+    $("save-habit").addEventListener("click", () => {
+      const name = value("habit-name");
+      if (!name) {
+        notice("請先填寫想培養的習慣。", true);
+        $("habit-name").focus();
+        return;
+      }
+      const checks = [...document.querySelectorAll(".habit-check")].map(check => check.checked);
+      const record = base("habit", name, JSON.stringify({ small: value("habit-small"), checks, completed: checks.filter(Boolean).length }), todayString());
+      createRecord(record, () => {});
+    });
+
+    // 初始化
+    $("plan-date").value = todayString();
+    $("reflect-date").value = todayString();
+    renderTimer();
+    updateHabitProgress();
+    loadStorage();
+  </script>
+</body>
+</html>
